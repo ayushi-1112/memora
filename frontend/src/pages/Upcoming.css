@@ -1,0 +1,44 @@
+.upcoming {
+  padding: 40px 80px;
+  min-height: calc(100vh - 70px);
+}
+
+.upcoming h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.upcoming-group {
+  margin-bottom: 40px;
+}
+
+.upcoming-group h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #a5b4fc;
+}
+
+.upcoming-group ul {
+  list-style: none;
+  padding: 0;
+}
+
+.task-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 18px;
+  margin-bottom: 10px;
+  background: #0f172a;
+  border-radius: 10px;
+  border: 1px solid #1e293b;
+}
+
+.task-card .level {
+  font-size: 13px;
+  color: #c7d2fe;
+}
+
+.empty {
+  color: #64748b;
+  font-size: 14px;
+}

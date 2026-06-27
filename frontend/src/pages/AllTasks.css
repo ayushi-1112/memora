@@ -1,0 +1,142 @@
+/* === AllTasks.css === */
+
+.all-tasks {
+  padding: 80px;
+  background-color: #0b0f1a;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+.all-tasks h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.task-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.task-card {
+  background-color: #1e1b4b;
+  padding: 24px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.task-card:hover {
+  transform: translateY(-4px);
+}
+
+.task-card h3 {
+  font-size: 18px;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.task-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  background-color: #2e2a5a;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.task-level {
+  color: #a5b4fc;
+  font-weight: 500;
+}
+
+.task-due.due-now {
+  color: #34d399;
+  font-weight: 600;
+}
+
+.task-due.not-due {
+  color: #94a3b8;
+  font-weight: 500;
+} 
+
+.delete-btn {
+  margin-top: 12px;
+  padding: 6px 12px;
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: #22c55e;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  animation: fadein 0.3s, fadeout 0.3s 2.2s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeout {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.task-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.complete-btn {
+  background-color: #3b82f6;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.complete-btn {
+  background-color: #3b82f6;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.task-header select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: #1e293b;
+  color: white;
+  border: 1px solid #334155;
+}

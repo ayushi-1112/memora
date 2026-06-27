@@ -1,0 +1,38 @@
+.progress {
+  padding: 40px 80px;
+  min-height: calc(100vh - 70px);
+}
+
+.progress h2 {
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.stat-card {
+  background: linear-gradient(145deg, #0f172a, #020617);
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+  padding: 26px;
+  transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+}
+
+.stat-title {
+  font-size: 14px;
+  color: #94a3b8;
+  margin-bottom: 8px;
+}
+
+.stat-value {
+  font-size: 32px;
+  color: #e0e7ff;
+}
